@@ -1,0 +1,135 @@
+/** common css start */
+
+/** CSS variables */
+:root {
+  --primarycolor: rgb(171, 106, 9);
+  --secondarycolor: black;
+  --primaryFont: "poppins", sans-serif;
+  --secondaryFont: "PT sans", sans-serif;
+}
+/** css variables*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 1110px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.btn {
+  border-radius: 20px;
+  background-color: var(--primarycolor);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 180%;
+  color: white;
+  padding: 16px 45px 16px;
+  display: inline-block;
+}
+.justify-center {
+  justify-content: center;
+}
+/** common css end */
+
+/** navbar start */
+nav .logo {
+  width: 30%;
+}
+nav .menu {
+  width: 70%;
+  text-align: right;
+}
+nav .menu li {
+  display: inline-block;
+}
+nav .menu li a {
+  font-family: var(--primaryFont);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 200%;
+  color: var(--secondarycolor);
+  text-transform: uppercase;
+  display: block;
+  padding: 18px 22px 5px;
+  position: relative;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 1px solid var(--secondarycolor);
+  color: var(--secondarycolor);
+  padding: 16px 18px;
+}
+
+nav .menu li a::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--secondarycolor);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.35s;
+}
+nav .menu li .active::before,
+nav .menu li:hover a::before {
+  width: 100%;
+}
+/** navbar ends*/
+
+/** main  start */
+
+#banner {
+  padding: 56px 0 155px;
+}
+
+#banner .bannerCnt,
+#banner .bannerImg {
+  width: 50%;
+  color: var(--secondarycolor);
+}
+
+#banner .bannerCnt h4 {
+  font-family: var(--primaryFont);
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#banner .bannerCnt h1 {
+  font-weight: 700;
+  font-size: 64px;
+  margin: 15px 0 25px;
+}
+
+#banner .bannerCnt p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  margin-bottom: 45px;
+}
+
+#banner .outline {
+  margin-left: 40px;
+}
+
+/** main ends */
